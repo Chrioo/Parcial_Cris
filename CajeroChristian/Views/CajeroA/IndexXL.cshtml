@@ -1,0 +1,14 @@
+﻿@model CajeroChristian.Models.CajeroAutomatico
+@{
+    ViewBag.Title = "IndexXL";
+}
+
+<h2>Cajero</h2>
+@using (Html.BeginForm("IndexXL", "CajeroA", FormMethod.Post))
+ {
+   
+  <label>Escriba el Monto</label>
+  @Html.TextBoxFor(Result => Result.monto)
+  <input type="submit" class="btn btn-outline-secondary"/>
+ }
+
